@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'RocknRoll One', sans-serif;
+}
+.middle{
+  margin-top: 180px;
+}
+.end{
+  position: absolute;
+  bottom: 0;
+}
+.start{
+  padding-top: 20px;
+}
+.profile{
+  padding-top: 30px;
+}
