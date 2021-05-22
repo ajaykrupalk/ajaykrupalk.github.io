@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+.logo img{
+    height: 65px;
+    width: 70px;
+}
+.links a{
+    position: relative;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 1px;
+}
+.links a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width .4s linear;
+}
+.links a:hover span{
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+.contact{
+    font-weight: bold;
+    font-size: 16px;
+}
+.inbox{
+    margin-top: 2.5em;
+    background-color: white;
+    background-size: cover;
+}
+.inbox h1{
+    padding-top: 2em;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    font-size: 55px; 
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4em; 
+}
+.flex div{
+    border: 2.5px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+.arw{
+    background-color: black;
+    color: white;
+}
+.goal{
+    margin-top: 5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px; 
+}
+.rarw{
+    margin: auto;
+    margin-top: 10px;
+    height: 7px;
+    width: 22px;
+    background-color: black;
+    transform: rotate(-20deg);
+}
