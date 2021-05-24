@@ -19,6 +19,8 @@
     font-weight: bold;
     font-size: 16px;
     padding-bottom: 1px;
+    text-decoration: none;
+    color: black;
 }
 .links a span{
     position: absolute;
@@ -35,11 +37,10 @@
 .contact{
     font-weight: bold;
     font-size: 16px;
+    height: 1em;
 }
 .inbox{
     margin-top: 2.5em;
-    background-color: white;
-    background-size: cover;
 }
 .inbox h1{
     padding-top: 2em;
@@ -75,6 +76,75 @@
     width: 22px;
     background-color: black;
     transform: rotate(-20deg);
+}
+#contact{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 47em;
+    width: 0%;
+    text-align: center;
+}
+.close{
+    padding-top: 30px;
+    font-size: 40px;
+    color: grey;
+}
+.close p{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.mail h3{
+    margin-top: 3em;
+    font-size: 2.5em;
+}
+.mail h1 a{
+    font-size: 5em;
+    text-decoration: none;
+    color: #3F3F3F;
+}
+.social{
+    margin-top: 10em;
+}
+.social h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.social div{
+    margin-top: 10px;
+}
+.social div>a{
+    margin: 30px;
+    color: #3F3F3F;
+    opacity: 0.7;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+@media screen and (max-width: 1024px){
+    .mail h3{
+        margin-top: 3em;
+        font-size: 2em;
+    }
+    .mail h1 a{
+        font-size: 3.5em;
+    }
+    .social{
+        margin-top: 14em;
+    }
+}
+@media screen and (max-width: 770px){
+    .mail h3{
+        margin-top: 7em;
+        font-size: 1.5em;
+    }
+    .mail h1 a{
+        font-size: 2.5em;
+    }
+    .social{
+        margin-top: 12em;
+    }
 }
 @media screen and (max-width: 427px){
     .contact{
