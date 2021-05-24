@@ -76,3 +76,23 @@
     background-color: black;
     transform: rotate(-20deg);
 }
+@media screen and (max-width: 427px){
+    .contact{
+        display: none;
+    }
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header div{
+        padding: 10px;
+    }
+    .inbox h1{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 322px){
+    .inbox h1{
+        font-size: 30px;
+    }
+}
