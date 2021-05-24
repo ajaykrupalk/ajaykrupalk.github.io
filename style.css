@@ -122,7 +122,7 @@
     font-weight: bold;
     letter-spacing: 5px;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1026px){
     .mail h3{
         margin-top: 3em;
         font-size: 2em;
