@@ -83,6 +83,7 @@
     right: 0;
     background-color: white;
     height: 47em;
+    width: 100%;
     display: none;
     text-align: center;
 }
