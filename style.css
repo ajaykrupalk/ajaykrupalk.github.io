@@ -84,7 +84,13 @@
 @media screen and (max-width: 377px){
     .hello{
         margin-top: 3em;
-        margin-left: 1em;
-        font-size: 30px;
+    }
+}
+@media screen and (max-width: 327px){
+    .hello{
+        margin-top: 3em;
+    }
+    .about{
+        width: 10em;
     }
 }
