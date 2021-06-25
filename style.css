@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+.hello{
+    margin: 4em 0 0 4em;
+    font-size: 40px;
+    font-weight: 300;
+}
+.wave{
+	position: absolute;
+	animation: waving ease 1s infinite;
+	animation-delay: 1s;
+	font-size: 35px;
+}
+@keyframes waving{
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(10deg);}
+	50% {transform: rotate(10deg);}
+	100% {transform: rotate(0deg);}
+}
+.about{
+    margin: 1.5em 0 0 4em;
+    font-size: 40px;
+    width: 17em;
+    font-weight: 300;
+    line-height: 1.3;
+}
+.bold{
+    font-weight: bold;
+}
+.mail{
+    margin: 7em 0 0 7.9em;
+    font-size: 20px;
+    font-weight: 550;
+}
+.mail>a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2.5px solid #2C46FF; 
+}
+.fill{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 2.5px;
+}
+.mail>a:hover .fill{
+    color: white;
+}
+#education{
+    margin-top: 12em;
+    margin-bottom: 5em;
+    visibility: hidden;
+}
+.section_heading>h2{
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #2C46FF;
+    font-weight: bold;
+    float: left;
+    margin-left: 9em;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+}
+.flex>div{
+    margin-right: 7em;
+}
+.edu_details{
+    line-height: 1.5;
+    margin-left: 3.5em;
+    font-size: 16px;
+}
+.edu_details>h2{
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+#skills{
+    margin-bottom: 5em;
+    visibility: hidden;
+}
+.skill{
+    margin-right: 6em;
+}
+.skills_details{
+    font-size: 14px;
+    width: 9em; 
+}
+.skills_details>ul{
+    line-height: 1.5;
+    list-style-type:  none;
+    /* font-weight: 100; */
+}
+#projects{
+    margin-bottom: 10em;
+    visibility: hidden;
+}
+.col-flex{
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+.col-flex>div{
+    width: 34em;
+}
+.projects_details{
+    margin-left: 5em;
+    font-size: 14px;
+}
+.projects_details>h3{
+    font-weight: bold;
+    margin-top: -1em;
+}
+.projects_details>p{
+    font-weight: 300;
+    line-height: 1.5;
+}
+.arrow{
+    font-size: 20px;
+    color: #2C46FF;
+}
+.tools{
+    margin-top: 1em;
+    font-size: 11px;
+    color: #2C46FF;
+}
+.tools>a{
+    font-weight: bold;
+    border: 2px solid #2C46FF;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+footer{
+    margin-bottom: 4em;
+}
+.credits{
+    font-size: 14px;
+}
+.links{
+    font-size: 14px;
+    color: #2C46FF;
+}
+.links>a{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #2C46FF;
+    text-decoration: none;
+}
+.footer-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#top_scroll{
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 99;
+    animation: move 1s infinite forwards linear;
+	animation-delay: 1s;
+}
+@keyframes move{
+	0%{transform: translatey(0);}
+    25%{transform: translatey(.5em);}
+    50%{transform: translatey(.5em);}
+	100%{transform: translatey(0);}
+}
+@media screen and (max-width: 1026px){
+    .hello{
+        margin-left: 2em;
+    }
+    .about{
+        margin-left: 2em;
+    }
+    .mail{
+        margin-left: 4em;
+        margin-top: 5em;
+    }
+    .section_heading>h2{
+        margin-left: 4em;
+    }
+    .flex>div{
+        margin-right: 4em;
+    }
+}
+@media screen and (max-width: 770px){
+    .hello{
+        margin-left: 1em;
+    }
+    .about{
+        margin-left: 1em;
+    }
+    .mail{
+        margin-left: 2em;
+        margin-top: 5em;
+    }
+    .section_heading>h2{
+        margin-left: 2em;
+    }
+    .flex>div{
+        margin: 1em 1.5em 0 2em;
+    }
+    .edu_details{
+        margin-left: 1em;
+    }
+    .projects_details{
+        margin-left: 2.4em;
+    }
+    .projects_details>h3{
+        margin-top: .2em;
+    }
+    .flex>div{
+        margin-right:2em;
+    }
+    .skills_details{
+        margin-left: 2.5em !important; 
+    }
+    *{
+        clear: left;
+    }
+}
+@media screen and (max-width: 427px){
+    *{
+        overflow-x: hidden;
+    }
+    .hello{
+        margin-top: 4em;
+        margin-left: 1em;
+        font-size: 30px;
+    }
+    .about{
+        margin-left: 1em;
+        width: 12em;
+        font-size: 27px;
+        line-height: 2;
+    }
+    .mail{
+        margin-top: 2em;
+        margin-left: 1.5em;
+        font-size: 22px;
+        line-height: 1.5;
+    }
+    .flex>div{
+        margin-right: 3.5em;
+    }
+    .footer-flex{
+        flex-direction: column;
+        text-align: center;
+    }
+    .col-flex>div{
+        width: 26em;
+    }
+    .links{
+        margin-top: 1em;
+    }
+    .edu_details>h2{
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+    .edu_details>p{
+        font-size: 14px;
+    }
+    .flex>div{
+        margin-right:2em;
+    }
+    .skills_details{
+        margin-left: 2.5em !important; 
+    }
+}
+@media screen and (max-width: 377px){
+    .hello{
+        margin-top: 3em;
+    }
+    .flex>div{
+        margin: 1em 1em 0 1.7em;
+    }
+    .projects_details>p{
+        width: 20em;
+    }
+    .edu_details>h2{
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+    .edu_details>p{
+        font-size: 14px;
+    }
+    .section_heading>h2{
+        margin-left: 1.7em;
+    }
+    .projects_details{
+        margin-left: 2em;
+    }
+    .skills_details{
+        margin-left: 2em !important; 
+    }
+}
+@media screen and (max-width: 327px){
+    .hello{
+        margin-top: 3em;
+    }
+    .about{
+        width: 10em;
+    }
+    .edu_details>h2{
+        font-size: 13px;
+        letter-spacing: 0px;
+    }
+    .skills_details{
+        font-size: 12px;
+    }
+    .col-flex>div{
+        width: 19em;
+    }
+    .tools>a{
+        font-size: 10px;
+        line-height: 1.5;
+    }
+    .skills_details{
+        margin-left: 2.4em !important; 
+    }
+}
