@@ -64,6 +64,7 @@
 }
 .mail>a:hover .fill{
     color: white;
+    background-color: #2C46FF; 
 }
 #education{
     margin-top: 12em;
