@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+}
+body{
+    background-color: #07101D;
+}
+.username{
+    margin: 12em auto;
+    height: 20rem;
+    width: 20rem;
+    background-color: #10152D;
+    border-radius: 7px;
+    text-align: center;
+}
+.username>img{
+    margin: 1em;
+    height: 10rem;
+    width: 10rem;
+}
+input{
+    margin-top: 1rem;
+    padding: 1em;
+    background-color: #323232;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    height: 2.5em;
+    width: 15em;
+    color: #0aefff;
+    font-weight: bold;
+    outline: none;
+    letter-spacing: 3px;
+}
+::placeholder{
+    color: #979696;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+}

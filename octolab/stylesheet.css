@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+  }
+  body{
+    background-color: #07101D;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  .profile{
+    padding: 1em;
+    text-align: center;
+  }
+  .dp{
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    border: 3px solid #f0f0f0;
+  }
+  .login{
+    text-align: center;
+    letter-spacing: 2px;
+    color: #2260FF;
+    padding-top: 17px;
+    margin-bottom: 10px;
+  }
+  .joined{
+    color: #48CAE4;
+    font-size: 14px;
+    text-align: center;
+    margin: 5px;
+  }
+  .flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex>div{
+    color: #b9f7f4;
+    font-size: 14px;
+    margin: 12px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .updated{
+    font-size: 14px;
+    text-align: center;
+    margin: 5px;
+    color: #48CAE4;
+  }
+  table{
+    margin: 1em auto;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    border-spacing: 3em;
+    overflow-x: hidden;
+  }
+  .headers{
+    color: #00C3A0;
+  }
+  tbody>tr>td>a{
+    color: white;
+    text-decoration: none;
+  }
+  tbody>tr>td>img{
+    height: 15px;
+    width: 15px;
+  }
+  .activity{
+    margin: 2em;
+  }
+  #chart>div{
+    margin: 1em auto;
+  }
+  @media only screen and (max-width: 427px){
+    .table{
+      width: 100%;
+    }
+    .overflow{
+      overflow-x: scroll;
+    }
+  }

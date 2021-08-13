@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OctoLab</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<body>
+
+  <section>
+    <div class="profile">
+      <img src="" class="dp" alt="dp">
+    </div>
+    <!-- User Data -->
+
+    <h4 class="login"></h4>
+
+    <p class="joined"><span class="bold">Joined on</span> </p>
+
+    <div class="flex">
+
+      <div>
+        <h3 class="repos"></h3>
+        <p>REPOSITORIES</p>
+      </div>
+
+      <div>
+        <h3 class="followers"></h3>
+        <p>FOLLOWERS</p>
+      </div>
+
+      <div>
+        <h3 class="following"></h3>
+        <p>FOLLOWING</p>
+      </div>
+
+    </div>
+
+    <p class="updated"><span class="bold">Updated on</span> </p>
+  </section>
+
+  <!-- ApexCharts -->
+  <section class="activity">
+    <div id="chart"></div>
+  </section>
+
+  <!-- Repository Data -->
+  <section class="overflow">
+    <table>
+      <colgroup>
+        <col>
+        <col class="hidden">
+        <col>
+        <col class="hidden">
+      </colgroup>
+      <!-- Headers of table -->
+      <thead>
+        <tr class="headers">
+          <th></th>
+          <th>Name</th>
+          <th>Date Modified</th>
+          <th>Languages</th>
+          <th>Stars</th>
+          <th>Forks</th>
+          <th>Size</th>
+        </tr>
+      </thead>
+      <tbody class="trows" style="color: #ffffff;">
+        <!-- Add rows dynamically -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
