@@ -5,4 +5,4 @@ This is simple text
 function simple(){
   console.log("This is code");
 }
-```
+
