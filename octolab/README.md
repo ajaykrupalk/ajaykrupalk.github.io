@@ -172,6 +172,7 @@ getTodos('https://api.github.com/users').then(data = > {
 ```
 
 > Making multiple requests using promises a.k.a Chaining Promises
+
 ```
 getData(`https://api.github.com/users`).then(data=>{
     console.log(data);
@@ -184,4 +185,43 @@ getData(`https://api.github.com/users`).then(data=>{
   }).catch(error => {
     console.log(error);
 });
+```
+
+### Using Fetch API
+> It is a newer and quicker way for Asynchronous Javascript which is inbuilt into the language
+
+> We can achieve this with fetch() which will return  a promise
+
+```
+fetch(`https://api.github.com/users`).then(response => {
+  return response.json();//use to parse json text to javascript objects and returns a promise
+}).then(data => {
+  console.log(data);
+}).catch(error => {
+  //fetch() will output an error only if there is a servor error
+  console.log(error);
+});
+```
+
+> There are two important topics: Async and Await, which will help us with promises and chaining promises
+> The keyword **async** is mentioned before the function
+
+```
+const getData = async () =>{
+
+  const response = await fetch(`https://api.github.com/users`);
+  //The await keyword stalls the javascript till the data is resolved
+   
+  if(response.status !== 200){
+    throw new Error('Not Found');
+  }
+  
+  const data = await response.json();
+  return data;
+  //for chaining promises use the above code but with different variables
+};
+
+getData()
+  .then(data => console.log(data));
+  .catch(error => console.log(error.message));
 ```
