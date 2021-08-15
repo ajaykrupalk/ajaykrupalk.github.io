@@ -204,7 +204,8 @@ fetch(`https://api.github.com/users`).then(response => {
 ```
 
 > There are two important topics: Async and Await, which will help us with promises and chaining promises
-> The keyword **async** is mentioned before the function
+
+> The keyword **async** is mentioned before the function to make the code asynchronous
 
 ```
 const getData = async () =>{
