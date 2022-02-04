@@ -46,7 +46,7 @@
                     tracking-wider
                   "
                 >
-                  Repository
+                  repo
                 </th>
                 <th
                   scope="col"
@@ -74,7 +74,7 @@
                     tracking-wider
                   "
                 >
-                  Language
+                  lang
                 </th>
                 <th
                   scope="col"
@@ -129,7 +129,7 @@
                   "
                 >
                   <!-- <a href="#" class="text-indigo-600 hover:text-indigo-900">Apply</a> -->
-                  <button type="submit" class="text-indigo-600 bg-indigo-100 p-2 min-w-full font-semibold rounded hover:text-indigo-900" @click="fetchData">
+                  <button type="submit" class="text-indigo-600 bg-indigo-100 p-2 min-w-full font-semibold rounded hover:text-indigo-900" @click="createData">
                     Apply
                   </button>
                 </td>
@@ -142,13 +142,13 @@
                   {{ value.date }}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {{ value.repository }}
+                  {{ value.repo }}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {{ value.branch }}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {{ value.language }}
+                  {{ value.lang }}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {{ value.comment }}
@@ -174,9 +174,9 @@ export default {
       row: {
         day: '',
         date: '',
-        repository: '',
+        repo: '',
         branch: '',
-        language: '',
+        lang: '',
         comment:'',
       }, 
       row_id: '',
@@ -196,19 +196,19 @@ export default {
     fetchData(){
       // this.row.row_id = this.$route.params.id;
       console.log(this.row);
+      Row.query().then(({data})=>{
+        this.rows = data;
+      }).catch((err)=>{
+        console.log(err);
+      });
+    },
+    createData(){
       Row.create(this.row).catch((err) => {
         console.log(err);
       }).then((res) => {
         if(res.status == 201) {
+          fetchData();
           this.$toast.success('Row Created');
-          this.schema[0].rows.push(res.data.id);
-          this.row.push(res.data.id);
-          this.row.day = '',
-          this.row.date = '',
-          this.row.repository = '',
-          this.row.branch = '',
-          this.row.language = '',
-          this.row.comment = '',
           this.$emit('Row-added', this.schema);
         } else {
           this.$toast.error('Something went wrong.');
