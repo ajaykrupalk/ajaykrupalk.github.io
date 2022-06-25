@@ -214,7 +214,7 @@ export default {
           this.$toast.error('Something went wrong.');
         }
       });
-    }
+    },
   },
   components: {
     UserInput,

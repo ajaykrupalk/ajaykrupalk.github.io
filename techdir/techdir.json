@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "url": "https://devdocs.io/",
+        "description": "Find docs to various technologies in one place.",
+        "category": "API"
+    },
+    {
+        "id": 2,
+        "url": "https://www.devresourc.es/",
+        "description": "Collaborative list of resources for developers",
+        "category": "Information"
+    },
+    {
+        "id": 3,
+        "url": "https://ray.so/",
+        "description": "Allows you to take beautiful screenshots of codes.",
+        "category": "Programming"
+    },
+    {
+        "id": 4,
+        "url": "https://roadmap.sh/",
+        "description": "Provides roadmaps, guidelines, and other educational content to assist developers in choosing a path and directing their learning.",
+        "category": "Educational"
+    },
+    {
+        "id": 5,
+        "url": "https://www.lambdatest.com/",
+        "description": "Cloud-based cross-browser testing platform that lets you test web applications, operating systems, and devices.",
+        "category": "Testing"
+    },
+    {
+        "id": 6,
+        "url": "https://texts.com/",
+        "description": "All of your messages in one inbox",
+        "category": "Messaging"
+    }
+]
