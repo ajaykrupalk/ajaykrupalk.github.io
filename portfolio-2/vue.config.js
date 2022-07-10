@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/portfolio-2/'
+    publicPath: '/portfolio-2/index.html'
 }
