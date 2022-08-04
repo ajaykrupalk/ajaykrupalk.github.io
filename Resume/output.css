@@ -10055,31 +10055,31 @@ video {
 }
 
 .cursor-about{
-  cursor: url("/icons8-man-medium-dark-skin-tone-48.png"), pointer;
+  cursor: url("icons8-man-medium-dark-skin-tone-48.png"), pointer;
 }
 
 .cursor-work{
-  cursor: url("/icons8-man-technologist-48.png"), pointer;
+  cursor: url("icons8-man-technologist-48.png"), pointer;
 }
 
 .cursor-summary{
-  cursor: url("/icons8-page-facing-up-48.png"), pointer;
+  cursor: url("icons8-page-facing-up-48.png"), pointer;
 }
 
 .cursor-education{
-  cursor: url("/icons8-man-student-48.png"), pointer;
+  cursor: url("icons8-man-student-48.png"), pointer;
 }
 
 .cursor-projects{
-  cursor: url("/icons8-building-construction-48.png"), pointer;
+  cursor: url("icons8-building-construction-48.png"), pointer;
 }
 
 .cursor-awards{
-  cursor: url("/icons8-sports-medal-48.png"), pointer;
+  cursor: url("icons8-sports-medal-48.png"), pointer;
 }
 
 .cursor-skills{
-  cursor: url("/icons8-brain-emoji-48.png"), pointer;
+  cursor: url("icons8-brain-emoji-48.png"), pointer;
 }
 
 
